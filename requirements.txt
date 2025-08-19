@@ -4,3 +4,7 @@ openpyxl
 python-dateutil
 PyYAML
 pytz
+streamlit
+numpy
+matplotlib
+fpdf
