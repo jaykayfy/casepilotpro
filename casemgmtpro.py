@@ -61,6 +61,8 @@ for k, v in defaults.items():
     if k not in st.session_state:
         st.session_state[k] = v
 
+st.set_page_config(page_title="Case Pilot Tool", layout="wide")
+
 def apply_theme():
     st.markdown(f'''
     <style>
@@ -858,3 +860,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
