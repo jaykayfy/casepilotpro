@@ -1,0 +1,21 @@
+# === eCourts PC Dashboard Configuration ===
+# base_url: Change if you want to point at a different provider.
+# WARNING: The default is a third-party mirror-style API. Replace with official endpoints when available.
+base_url: "https://eciapi.akshit.me"
+# If using a provider that needs an API key, set it here.
+api_key: ""
+# Request pacing to be friendly to servers (in seconds)
+min_delay_seconds: 0.7
+# How many days ahead to include in calendar export
+calendar_days_ahead: 45
+# Default reminder minutes before hearing (for ICS)
+default_reminder_minutes: 120
+# Output filenames
+excel_output: "dashboard.xlsx"
+ics_output: "upcoming_hearings.ics"
+# Timezone for calendar events (IANA tz database name)
+timezone: "Asia/Kolkata"
+# Adapter mode:
+#   "cnr_list" -> query by CNRs listed in cases.csv
+#   "advocate_search" -> query by advocate name for rows whose alias starts with "Advocate Search:"
+mode: "mixed"
